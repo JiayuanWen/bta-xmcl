@@ -1,0 +1,104 @@
+{
+    "id": "bta-7.3_04-babric-0.15.6",
+    "inheritsFrom": "bta-7.3_04",
+    "mainClass": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+    "name": "Fabric Loader",
+    "type": "release",
+    "uid": "net.fabricmc.fabric-loader",
+    "version": "0.15.6-bta.7",
+    "minecraftArguments": "--username ${auth_player_name} --session ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --uuid ${auth_uuid}",
+    "libraries": [
+        {
+            "name": "net.fabricmc.fabric-loader:fabric-loader:0.15.6-bta.7"
+        },
+        {
+            "name": "net.fabricmc:tiny-mappings-parser:0.3.0+build.17",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "net.fabricmc:mapping-io:0.5.0",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "net.fabricmc:tiny-remapper:0.10.4",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "net.fabricmc:access-widener:2.1.0",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "org.ow2.asm:asm:9.6",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "org.ow2.asm:asm-analysis:9.6",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "org.ow2.asm:asm-commons:9.6",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "org.ow2.asm:asm-tree:9.6",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "org.ow2.asm:asm-util:9.6",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "name": "io.github.llamalad7:mixinextras-fabric:0.3.2",
+            "url": "https://maven.fabricmc.net/"
+        },
+        {
+            "downloads": {
+                "artifact": {
+                "path": "org/apache/babric/log4j-config/1.0.0/log4j-config-1.0.0.jar",
+                "sha1": "ba145a6f12f73a09a7c4d246769c9be38ab8d983",
+                "size": 1164,
+                "url": "https://maven.glass-launcher.net/babric/babric/log4j-config/1.0.0/log4j-config-1.0.0.jar"
+                }
+            },
+            "name": "babric:log4j-config:1.0.0"
+        },
+        {
+            "name": "net.minecrell:terminalconsoleappender:1.2.0",
+            "url": "https://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "org.slf4j:slf4j-api:1.8.0-beta4"
+        },
+        {
+            "name": "org.apache.logging.log4j:log4j-slf4j18-impl:2.17.1",
+            "url": "https://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "org.apache.logging.log4j:log4j-api:2.17.1",
+            "url": "https://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "org.apache.logging.log4j:log4j-core:2.17.1",
+            "url": "https://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "com.google.code.gson:gson:2.10.1"
+        },
+        {
+            "name": "com.google.guava:guava:31.0.1-jre"
+        },
+        {
+            "name": "org.apache.commons:commons-lang3:3.12.0"
+        },
+        {
+            "name": "commons-io:commons-io:2.11.0"
+        },
+        {
+            "name": "commons-codec:commons-codec:1.15"
+        }
+    ]
+}
