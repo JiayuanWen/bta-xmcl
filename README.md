@@ -42,10 +42,10 @@ https://adoptium.net/temurin/releases?version=17&os=any&arch=any
       ![](readme-mat/instruction-pickversion1.png)\
       \
       ![](readme-mat/instruction-pickversion2.png)
-    * For `Local Version` section at the very bottom, choose `bta-<version you imported>` (ex. `bta-7.3_04`) 
-> [!WARNING] 
-> Do NOT choose the `-babric` version just yet. XMCL need the `bta-<version>` selected to install necessary files first.
-    * For `JavaLocation`, choose `17.0.x` (ex. `17.0.17`)
+    * For `Local Version` section at the very bottom, choose `bta-<version you imported>` (ex. `bta-7.3_04`). 
+      * **WARNING: Do NOT choose the option with `-babric`, that is for later.**
+
+     * For `JavaLocation`, choose `17.0.x` (ex. `17.0.17`)
 
 1. Once the instance is created, select it if not already, click on the gear icon at the top-right corner of launcher:
     ![](readme-mat/instruction-editinstance.png)
