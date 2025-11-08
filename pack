@@ -1,7 +1,5 @@
 #!/bin/sh
 
-BTA_VER="7.3_04"
-
 # Check if zip utility exist in system
 if ! command -v zip >/dev/null 2>&1
 then
@@ -9,10 +7,33 @@ then
     exit 1
 fi
 
+# Find and list avaliable versions in `versions/` folder
+FOLDER_MATCH="./versions/bta-*"
+
+echo -e "Avaliable versions:"
+for d in $FOLDER_MATCH; do
+    [ -d "$d" ] || continue
+    FOLDER_NAME=$(basename "$d")
+    case "$FOLDER_NAME" in
+        *-babric*)
+            # skip folders with babric postfix
+            ;;
+        bta-*)
+            ver=${FOLDER_NAME#bta-}
+            printf '* %s\n' "$ver"
+            ;;
+        *)
+            # skip anything else
+            ;;
+    esac
+done
+echo -e "\nChoose the version to pack (Type exact version string. For instance \"7.3_04\" for 7.3_04):" 
+read BTA_VER
+
 # Find matching directories in `versions/`
 found=""
-MATCH_LIST="./versions/bta-${BTA_VER} ./versions/bta-${BTA_VER}-babric*"
-for d in $MATCH_LIST; do
+FOLDER_MATCH="./versions/bta-${BTA_VER} ./versions/bta-${BTA_VER}-babric*"
+for d in $FOLDER_MATCH; do
     if [ -d "$d" ]; then
         found="$found $d"
     else
@@ -22,7 +43,7 @@ done
 
 # Exist if no matching version found.
 count=0
-for d in $MATCH_LIST; do
+for d in $FOLDER_MATCH; do
     if [ -d "$d" ]; then
         count=$((count + 1))
     fi

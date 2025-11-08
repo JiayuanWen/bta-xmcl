@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Script start..."
+
+# For unit testing
+
+echo "Script end..."
+exit 0
